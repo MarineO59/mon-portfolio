@@ -1,0 +1,56 @@
+.about {
+  padding: 3rem 2rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.about-content h1 {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.about-section {
+  margin-bottom: 2.5rem;
+}
+
+.about-section h2 {
+  font-size: 1.8rem;
+  color: #61dafb;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid #61dafb;
+  padding-bottom: 0.5rem;
+}
+
+.about-section p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #555;
+  margin-bottom: 1rem;
+  text-align: justify;
+}
+
+.skills-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  list-style: none;
+  padding: 0;
+}
+
+.skills-list li {
+  background-color: #f0f0f0;
+  padding: 1rem;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  color: #333;
+  text-align: center;
+  transition: transform 0.3s, background-color 0.3s;
+}
+
+.skills-list li:hover {
+  background-color: #61dafb;
+  color: white;
+  transform: translateY(-5px);
+}
