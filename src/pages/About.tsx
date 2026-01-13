@@ -24,10 +24,11 @@ function About() {
           <h2>Formation</h2>
 
           <div className="formation-item">
-            <p>Période | Expérience | Ce que j'en retire</p>
-            <p> <strong>2025 - 2026</strong> | Wild Code School | "Développement Fullstack (JS, React, Node)"</p>
-            <p> <strong>2018 - 2025</strong> | Pâtisserie (Canada) | Spécialisation tourière : Patience et technique</p>
-            <p> <strong>2011 - 2018 </strong>| Santé (Lille) | Aide-soignante en chirurgie : Rigueur et humanité</p>
+            <p className="formation-categorie"> <strong>Période</strong> | Expérience | Ce que j'en retire</p>
+            <br />
+            <p className="annee"> <strong>2025 - 2026</strong> | Wild Code School | "Développement Fullstack (JS, React, Node)"</p>
+            <p className="titre-formation"> <strong>2018 - 2025</strong> | Pâtisserie (Canada) | Spécialisation tourière : Patience et technique</p>
+            <p className="acquis"> <strong>2011 - 2018</strong> | Santé (Lille) | Aide-soignante en chirurgie : Rigueur et humanité</p>
 
           </div>
         </div>
