@@ -1,0 +1,19 @@
+[
+  {
+    "id": 1,
+    "title": "Projet Quiz des Villes",
+    "description": "Quiz sur différentes villes",
+    "technologies": ["HTML", "CSS", "JavaScript"],
+    "github": "https://github.com/MarineO59/WCS-BigProject-1.git",
+    "demo": "https://wcs-big-project-1-dz2q40ze7-thediabolicalkids-projects.vercel.app/"
+  },
+  {
+    "id": 2,
+    "title": "Vitrine de pâtisserie",
+    "description": "Vitrine de pâtisserie",
+    "technologies": ["HTML", "CSS"],
+    "github": "https://github.com/MarineO59/solo-rush1",
+    "demo": "https://solo-rush1.vercel.app/"
+  }
+  
+]

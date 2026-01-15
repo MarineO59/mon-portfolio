@@ -1,33 +1,45 @@
+import { useState, useEffect } from 'react';
 import './Projects.css';
 
-function Projects() {
-  const projects = [
-    {
-      id: 1,
-      title: "Projet 1",
-      description: "Description courte du projet 1",
-      technologies: ["React", "CSS"],
-      github: "https://github.com/ton-username/projet1",
-      demo: "https://demo-projet1.com"
-    },
-    {
-      id: 2,
-      title: "Projet 2",
-      description: "Description courte du projet 2",
-      technologies: ["JavaScript", "HTML"],
-      github: "https://github.com/ton-username/projet2",
-      demo: "https://demo-projet2.com"
-    },
-    {
-      id: 3,
-      title: "Projet 3",
-      description: "Description courte du projet 3",
-      technologies: ["Node.js", "React"],
-      github: "https://github.com/ton-username/projet3",
-      demo: "https://demo-projet3.com"
-    }
-  ];
+// Interface pour typer un projet
+interface Project {
+  id: number;
+  title: string;
+  description: string;
+  technologies: string[];
+  github: string;
+  demo: string;
+}
 
+function Projects() {
+  // États avec types
+  const [projects, setProjects] = useState<Project[]>([]);
+  const [loading, setLoading] = useState<boolean>(true);
+
+  // Fetch au chargement du composant
+  useEffect(() => {
+    fetch('/src/datas.json')
+      .then(response => response.json())
+      .then((data: Project[]) => {
+        setProjects(data);
+        setLoading(false);
+      })
+      .catch(error => {
+        console.error('Erreur lors du fetch:', error);
+        setLoading(false);
+      });
+  }, []);
+
+  // Affichage pendant le chargement
+  if (loading) {
+    return (
+      <div className="projects">
+        <p>Chargement des projets...</p>
+      </div>
+    );
+  }
+
+  // Affichage des projets
   return (
     <div className="projects">
       <h1>Mes Projets</h1>
