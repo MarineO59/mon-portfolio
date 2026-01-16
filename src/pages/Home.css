@@ -4,7 +4,7 @@
 
 .hero {
   background-image:
-    url('images/Airplane.jpg');
+    url('/images/Airplane.jpg');
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
