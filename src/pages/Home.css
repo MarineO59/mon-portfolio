@@ -3,6 +3,13 @@
 }
 
 .hero {
+  background-image:
+    url('images/Airplane.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  height: 100vh;
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -51,6 +58,7 @@
   background-color: #4fa8c5;
   transform: translateY(-3px);
 }
+
 .profile-photo {
   width: 200px;
   height: 200px;
@@ -63,7 +71,7 @@
   transition: transform 0.3s;
   padding: 2px;
   background-color: #61dafb;
-  
+
 }
 
 .profile-photo:hover {
