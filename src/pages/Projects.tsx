@@ -18,7 +18,7 @@ function Projects() {
 
   // Fetch au chargement du composant
   useEffect(() => {
-    fetch('/src/datas.json')
+    fetch('/datas.json')
       .then(response => response.json())
       .then((data: Project[]) => {
         setProjects(data);
