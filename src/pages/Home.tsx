@@ -5,6 +5,7 @@ function Home() {
     return (
         <div className="home">
             <section className="hero">
+                <img src="/MarineAvatar.png" alt="MarineAvatar" className="profile-photo" />
                 <h1> Salut, je suis <span className="highlight"> Marine </span></h1>
                 <h2>Développeuse web Full Stack Junior</h2>
                 <p> Passionnée par le développement web et en constante apprentissage.</p>

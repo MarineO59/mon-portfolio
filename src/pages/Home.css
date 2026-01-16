@@ -51,3 +51,21 @@
   background-color: #4fa8c5;
   transform: translateY(-3px);
 }
+.profile-photo {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 2rem;
+  overflow: hidden;
+  border: 5px solid #61dafb;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s;
+  padding: 2px;
+  background-color: #61dafb;
+  
+}
+
+.profile-photo:hover {
+  transform: scale(1.05);
+}
