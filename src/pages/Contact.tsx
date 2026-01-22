@@ -13,12 +13,12 @@ function Contact() {
         <div className="contact-info">
           <div className="info-item">
             <h3>📧 Email</h3>
-            <a href="mailto:marine.opsommer@gmail.com">marine.opsommer@gmail.com</a>
+            <a href="mailto:monmail@gmail.com">monmail@gmail.com</a>
           </div>
 
           <div className="info-item">
             <h3>📱 Téléphone</h3>
-            <p>+33 6 07 58 65 24</p>
+            <p>+33 X XX XX XX XX</p>
           </div>
 
           <div className="info-item">
