@@ -13,24 +13,24 @@ function Contact() {
         <div className="contact-info">
           <div className="info-item">
             <h3>📧 Email</h3>
-            <a href="mailto:marine.opsommer@gmail.com">marine.opsommer@gmail.com</a>
+            <a href="mailto:monmail@gmail.com">monmail@gmail.com</a>
           </div>
 
           <div className="info-item">
             <h3>📱 Téléphone</h3>
-            <p>+33 6 07 58 65 24</p>
+            <p>+33 x xx xx xx xx</p>
           </div>
 
           <div className="info-item">
             <h3>📍 Localisation</h3>
-            <p>Lille, France</p>
+            <p>France</p>
           </div>
 
           <div className="info-item">
             <h3>🔗 Réseaux</h3>
             <div className="social-links">
               <a href="https://github.com/MarineO59" target="_blank" rel="noopener noreferrer">GitHub</a>
-              <a href="https://www.linkedin.com/in/marine-opsommer-ab8467374/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+              <a href="https://www.linkedin.com/in/marine-opsommer/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
             </div>
           </div>
         </div>
