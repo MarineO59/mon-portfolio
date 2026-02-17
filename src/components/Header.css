@@ -1,26 +1,80 @@
+/* ========================================
+   MONTANT SUPÉRIEUR — Cadre de cockpit
+   ======================================== */
+
 .header {
-  background: rgba(5, 10, 21, 0.85);
-  backdrop-filter: blur(5px);
-  padding: 1rem 2rem;
-  border-bottom: 1px solid rgba(97, 218, 251, 0.3);
-  box-shadow: 0 2px 20px rgba(97, 218, 251, 0.1);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+
+  /* --- Texture métal brossé sombre --- */
+  background:
+    repeating-linear-gradient(
+      90deg,
+      rgba(255, 255, 255, 0.01) 0px,
+      transparent 1px,
+      transparent 3px
+    ),
+    linear-gradient(
+      180deg,
+      #1a2035 0%,
+      #141b2d 20%,
+      #101625 50%,
+      #0d1220 80%,
+      #0a0e1a 100%
+    );
+
+  padding: 0.8rem 2.5rem 1.2rem;
+
+  /* Arête inférieure métallique */
+  border-bottom: 3px solid #1e2a42;
+
+  /* Courbe du pare-brise — le bas s'arrondit */
+  border-radius: 0 0 40% 40% / 0 0 20px 20px;
+
+  box-shadow:
+    0 6px 25px rgba(0, 0, 0, 0.7),
+    0 2px 4px rgba(0, 0, 0, 0.5),
+    0 1px 0 rgba(200, 215, 240, 0.08) inset,
+    0 -2px 8px rgba(0, 0, 0, 0.3) inset;
 }
 
+/* --- Navigation — boutons encastrés --- */
 .header nav {
+  position: relative;
+  z-index: 2;
   display: flex;
-  gap: 2rem;
+  justify-content: center;
+  gap: 0.4rem;
 }
 
 .header a {
-  color: #8892b0;
+  position: relative;
+  color: #667a95;
   text-decoration: none;
-  font-size: 0.85rem;
+  font-size: 0.7rem;
   letter-spacing: 2px;
   text-transform: uppercase;
-  transition: all 0.3s ease;
+  padding: 0.45rem 1.1rem;
+  border-radius: 3px;
+  transition: all 0.25s ease;
+
+  background: linear-gradient(180deg, #0e1525 0%, #0b1020 100%);
+  border: 1px solid #1a2540;
+  box-shadow:
+    0 1px 3px rgba(0, 0, 0, 0.4),
+    0 1px 0 rgba(180, 200, 230, 0.04) inset;
 }
 
 .header a:hover {
   color: #61dafb;
-  text-shadow: 0 0 10px rgba(97, 218, 251, 0.6);
+  background: linear-gradient(180deg, #111b30 0%, #0e1525 100%);
+  border-color: rgba(97, 218, 251, 0.3);
+  box-shadow:
+    0 1px 3px rgba(0, 0, 0, 0.4),
+    0 0 8px rgba(97, 218, 251, 0.15) inset,
+    0 0 20px rgba(97, 218, 251, 0.05);
+  text-shadow: 0 0 6px rgba(97, 218, 251, 0.4);
 }
