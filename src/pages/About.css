@@ -7,9 +7,12 @@
 
 .about-content h1 {
   font-size: 2.5rem;
-  color: #333;
+  color: #fff;
   margin-bottom: 2rem;
   text-align: center;
+  text-transform: uppercase;
+  text-shadow: 0 0 10px rgba(97, 218, 251, 0.4);
+  letter-spacing: 3px;
 }
 
 .about-section {
@@ -17,19 +20,26 @@
 }
 
 .about-section h2 {
-  font-size: 1.8rem;
+  font-size: 1.3rem;
   color: #61dafb;
   margin-bottom: 1rem;
-  border-bottom: 2px solid #61dafb;
+  border-bottom: 1px solid rgba(97, 218, 251, 0.3);
   padding-bottom: 0.5rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-shadow: 0 0 5px rgba(97, 218, 251, 0.4);
 }
 
 .about-section p {
-  font-size: 1.1rem;
+  font-size: 1rem;
   line-height: 1.8;
-  color: #555;
+  color: #8892b0;
   margin-bottom: 1rem;
   text-align: justify;
+}
+
+.about-section p strong {
+  color: #a8b2d1;
 }
 
 .skills-list {
@@ -41,31 +51,40 @@
 }
 
 .skills-list li {
-  background-color: #f0f0f0;
+  border: 1px solid rgba(97, 218, 251, 0.3);
+  background: rgba(5, 10, 21, 0.6);
+  backdrop-filter: blur(5px);
   padding: 1rem;
-  border-radius: 5px;
-  font-size: 1.1rem;
-  color: #333;
+  border-radius: 8px;
+  font-size: 1rem;
+  color: #61dafb;
   text-align: center;
-  transition: transform 0.3s, background-color 0.3s;
+  letter-spacing: 1px;
+  box-shadow: 0 0 15px rgba(97, 218, 251, 0.1) inset;
+  transition: all 0.3s ease;
 }
 
 .skills-list li:hover {
+  border-color: #61dafb;
   background-color: #61dafb;
-  color: white;
+  color: #050a15;
   transform: translateY(-5px);
+  box-shadow: 0 0 25px rgba(97, 218, 251, 0.5);
 }
+
 .formation-item {
   margin-bottom: 2rem;
   padding: 1.5rem;
-  background-color: #f9f9f9;
+  border: 1px solid rgba(97, 218, 251, 0.3);
+  background: rgba(5, 10, 21, 0.6);
+  backdrop-filter: blur(5px);
   border-left: 4px solid #61dafb;
-  border-radius: 5px;
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgba(97, 218, 251, 0.1) inset;
 }
+
 .formation-item p {
   display: block;
   margin: 0;
   padding: 0;
 }
-
-
