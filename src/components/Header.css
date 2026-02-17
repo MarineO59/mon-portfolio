@@ -1,6 +1,9 @@
 .header {
-  background-color: #333;
+  background: rgba(5, 10, 21, 0.85);
+  backdrop-filter: blur(5px);
   padding: 1rem 2rem;
+  border-bottom: 1px solid rgba(97, 218, 251, 0.3);
+  box-shadow: 0 2px 20px rgba(97, 218, 251, 0.1);
 }
 
 .header nav {
@@ -9,12 +12,15 @@
 }
 
 .header a {
-  color: white;
+  color: #8892b0;
   text-decoration: none;
-  font-size: 1.1rem;
-  transition: color 0.3s;
+  font-size: 0.85rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
 }
 
 .header a:hover {
   color: #61dafb;
+  text-shadow: 0 0 10px rgba(97, 218, 251, 0.6);
 }
