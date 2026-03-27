@@ -87,7 +87,7 @@ function Contact() {
           <div className="contact-info">
             <div className="info-item">
               <h3>📍 Localisation</h3>
-              <p>France</p>
+              <p>Lille / Déménagement à Toulouse</p>
             </div>
 
             <div className="info-item">
