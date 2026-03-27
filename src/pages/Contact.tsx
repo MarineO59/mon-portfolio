@@ -86,12 +86,6 @@ function Contact() {
 
           <div className="contact-info">
             <div className="info-item">
-              <h3>📱 Téléphone</h3>
-              <p>+33 X XX XX XX XX</p>
-
-            </div>
-
-            <div className="info-item">
               <h3>📍 Localisation</h3>
               <p>France</p>
             </div>
