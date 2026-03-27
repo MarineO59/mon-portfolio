@@ -11,7 +11,7 @@
     "id": 2,
     "title": "Vitrine de pâtisserie",
     "description": "Vitrine de pâtisserie",
-    "technologies": ["HTML", "CSS"],
+    "technologies": ["HTML", "CSS", "JavaScript"],
     "github": "https://github.com/MarineO59/solo-rush1",
     "demo": "https://solo-rush1.vercel.app/"
   }
