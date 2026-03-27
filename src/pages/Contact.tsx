@@ -1,4 +1,5 @@
-import { useState, FormEvent } from 'react';
+import { useState } from 'react';
+import type { FormEvent } from 'react';
 import './Contact.css';
 
 function Contact() {
@@ -13,7 +14,7 @@ function Contact() {
     e.preventDefault();
     setStatus('sending');
     try {
-      const res = await fetch('https://formspree.io/f/VOTRE_ID', {
+      const res = await fetch('https://formspree.io/f/mkopgayp', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
         body: JSON.stringify(formData),
@@ -84,6 +85,12 @@ function Contact() {
           </form>
 
           <div className="contact-info">
+            <div className="info-item">
+              <h3>📱 Téléphone</h3>
+              <p>+33 X XX XX XX XX</p>
+
+            </div>
+
             <div className="info-item">
               <h3>📍 Localisation</h3>
               <p>France</p>
